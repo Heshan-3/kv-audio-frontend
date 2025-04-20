@@ -7,5 +7,13 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
+    viteStaticCopy({
+      targets: [
+        {
+          src: 'public/_redirects',
+          dest: '.' // copy to root of dist/
+        }
+      ]
+    })
   ],
 })
