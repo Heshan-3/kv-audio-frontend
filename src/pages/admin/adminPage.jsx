@@ -2,11 +2,7 @@ import { BsGraphDown } from "react-icons/bs";
 import { FaComment, FaRegBookmark, FaRegUser } from "react-icons/fa";
 import { MdOutlineSpeaker } from "react-icons/md";
 import { Link, Route, Routes, useNavigate } from "react-router-dom";
-import AdminOrdersPage from "./AdminOrdersPage";
-import AdminUsersPage from "./AdminUsersPage";
-import AdminItemsPage from "./AdminItemsPage";
-import AddItemPage from "./AddItemPage";
-import UpdateItemPage from "./UpdateItemPage";
+
 import { useEffect, useState } from "react";
 import axios from "axios";
 import AdminReviewApproval from "./approveReviwes";
@@ -14,6 +10,8 @@ import AdminInquiries from "./adminInquiries";
 import { FaQuestion } from "react-icons/fa6";
 import { GiHamburgerMenu } from "react-icons/gi";
 import AdminNavigation from "../../components/adminNavigation";
+import AdminOrdersPage from "./AdminOrdersPage";
+import AdminUsersPage from "./AdminUsersPage";
 
 export default function AdminPage() {
 	const [navPanelOpen, setNavPanelOpen] = useState(false);
