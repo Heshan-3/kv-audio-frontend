@@ -3,7 +3,8 @@ import axios from "axios";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { FaGoogle } from "react-icons/fa";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, Route, Routes, useNavigate } from "react-router-dom";
+import RegisterPage from "../../register/registerPage";
 
 export default function Login() {
     const [email, setEmail] = useState("");
@@ -105,12 +106,16 @@ export default function Login() {
                         
                         <div className="mt-[10px] md:mt-[15px] flex justify-center text-gray-700 cursor-pointer" onClick={googleLogin}><FaGoogle className="m-1"></FaGoogle>Google</div>
 
-                        <div className="mt-[30px] md:mt-[70px]  flex justify-center text-gray-400">Don't you have account</div>
+                        <div className="mt-[30px] md:mt-[30px]  flex justify-center text-gray-400">Don't you have account</div>
 
-                        <div className="mt-[10px] md:mt-[15px] flex justify-center text-gray-700 cursor-pointer"><Link to="/register" className="m-1"></Link>Register</div>
+                        <div className="mt-[10px] md:mt-[10px] flex justify-center text-gray-700 cursor-pointer">
+                            <Link to="/register" className="m-1">Register</Link>
+                        </div>
                     </form>
                 </div>
             </div>
+
+
         </div>
     );
 }
