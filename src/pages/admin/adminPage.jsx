@@ -10,8 +10,11 @@ import AdminInquiries from "./adminInquiries";
 import { FaQuestion } from "react-icons/fa6";
 import { GiHamburgerMenu } from "react-icons/gi";
 import AdminNavigation from "../../components/adminNavigation";
-import AdminOrdersPage from "./AdminOrdersPage";
-import AdminUsersPage from "./AdminUsersPage";
+import AdminOrdersPage from "./adminOrders";
+import AdminUsersPage from "./adminUsers";
+import AdminItemsPage from "./adminItems";
+import AddItemPage from "./addItems";
+import UpdateItemPage from "./updateItems";
 
 export default function AdminPage() {
 	const [navPanelOpen, setNavPanelOpen] = useState(false);
